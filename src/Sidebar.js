@@ -39,7 +39,12 @@ function SideBar() {
           <div className="icon-wrapper">
             <img src={playStoreIcon} alt="" className="img" />
           </div>
-          <a target="_blank" href={strings.linksAndroid} className="link">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={strings.linksAndroid}
+            className="link"
+          >
             {strings.linksAndroid}
           </a>
         </div>
@@ -47,7 +52,12 @@ function SideBar() {
           <div className="icon-wrapper">
             <img src={appStoreIcon} alt="" className="img" />
           </div>
-          <a target="_blank" href={strings.linksIos} className="link">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={strings.linksIos}
+            className="link"
+          >
             {strings.linksIos}
           </a>
         </div>
@@ -55,7 +65,12 @@ function SideBar() {
           <div className="icon-wrapper">
             <img src={githubIcon} alt="" className="img" />
           </div>
-          <a target="_blank" href={strings.linksGithub} className="link">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={strings.linksGithub}
+            className="link"
+          >
             {strings.linksGithub}
           </a>
         </div>
@@ -63,7 +78,12 @@ function SideBar() {
           <div className="icon-wrapper">
             <img src={youtubeIcon} alt="" className="img" />
           </div>
-          <a target="_blank" href={strings.linksYoutube} className="link">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={strings.linksYoutube}
+            className="link"
+          >
             {strings.linksYoutube}
           </a>
         </div>
