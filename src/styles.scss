@@ -1,0 +1,168 @@
+$almost-white: #fdfdfd;
+$almost-black: #222;
+$react-blue: #61dbfb;
+
+#master-wrapper {
+  height: 1123px;
+  width: 794px;
+  display: flex;
+  flex-direction: row;
+  border: solid black 2px;
+}
+#sidebar {
+  background: $react-blue;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+}
+#contact-wrapper {
+  padding-top: 85px;
+}
+.contact-attribute-wrapper {
+  display: flex;
+  height: 30px;
+}
+.link-attribute-wrapper {
+  display: flex;
+  height: 40px;
+}
+.icon-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#links-wrapper {
+  padding-top: 40px;
+}
+.img {
+  height: 30px;
+}
+.link {
+  flex: 5;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+#education-wrapper {
+  padding-top: 20px;
+  padding-left: 12px;
+}
+#education-title {
+  font-size: 25px;
+}
+#education-degree-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+#education-degree {
+  margin-top: 8px;
+}
+#education-degree-date {
+  flex: 1;
+}
+#education-institution {
+  font-weight: bold;
+}
+#skills-wrapper {
+  padding-top: 55px;
+  padding-left: 12px;
+  flex: 1;
+}
+#skills-title {
+  font-size: 25px;
+  font-weight: bold;
+}
+#skill-point {
+  padding: 2px;
+}
+#main-content-background {
+  width: 67%;
+  background: $almost-white;
+  background-image: url("./assets/ReactLogo.png");
+}
+#main-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: $almost-black;
+}
+#header {
+  margin-top: 20px;
+}
+#name {
+  font-size: 35px;
+  font-weight: bold;
+}
+#role {
+  font-size: 28px;
+  color: $react-blue;
+  font-weight: bold;
+}
+.title {
+  font-size: 25px;
+  padding: 30px 0px 5px 0px;
+  font-weight: bold;
+  color: black;
+}
+#programming-experience-wrapper {
+  margin-top: 10px;
+}
+.date {
+  text-align: end;
+}
+#programming-experience-app-developer-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+#programming-experience-app-developer {
+  font-weight: bold;
+}
+#programming-experience-app-developer-date {
+  flex: 1;
+}
+#programming-experience-apps {
+  margin-top: 5px;
+}
+#programming-experience-youtube-wrapper {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+#programming-experience-youtube {
+  font-weight: bold;
+}
+#programming-experience-youtube-date {
+  flex: 1;
+}
+#work-history-wrapper {
+  margin-top: 10px;
+}
+#work-history-security-analyst-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+#work-history-security-analyst {
+  font-weight: bold;
+}
+#work-history-security-analyst-date {
+  flex: 1;
+}
+#work-history-security-analyst-points {
+  margin-top: 5px;
+}
+#work-history-sales-associate-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+#work-history-sales-associate {
+  font-weight: bold;
+}
+#work-history-sales-associate-date {
+  flex: 1;
+}
+#work-history-sales-associate-points {
+  margin-top: 5px;
+}

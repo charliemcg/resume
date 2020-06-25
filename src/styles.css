@@ -1,0 +1,277 @@
+#master-wrapper {
+  height: 1123px;
+  width: 794px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: solid black 2px;
+}
+
+#sidebar {
+  background: #61dbfb;
+  width: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#contact-wrapper {
+  padding-top: 85px;
+}
+
+.contact-attribute-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30px;
+}
+
+.link-attribute-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+}
+
+.icon-wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#links-wrapper {
+  padding-top: 40px;
+}
+
+.img {
+  height: 30px;
+}
+
+.link {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+#education-wrapper {
+  padding-top: 20px;
+  padding-left: 12px;
+}
+
+#education-title {
+  font-size: 25px;
+}
+
+#education-degree-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#education-degree {
+  margin-top: 8px;
+}
+
+#education-degree-date {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#education-institution {
+  font-weight: bold;
+}
+
+#skills-wrapper {
+  padding-top: 55px;
+  padding-left: 12px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#skills-title {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#skill-point {
+  padding: 2px;
+}
+
+#main-content-background {
+  width: 67%;
+  background: #fdfdfd;
+  background-image: url("./assets/ReactLogo.png");
+}
+
+#main-content {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #222;
+}
+
+#header {
+  margin-top: 20px;
+}
+
+#name {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+#role {
+  font-size: 28px;
+  color: #61dbfb;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 25px;
+  padding: 30px 0px 5px 0px;
+  font-weight: bold;
+  color: black;
+}
+
+#programming-experience-wrapper {
+  margin-top: 10px;
+}
+
+.date {
+  text-align: end;
+}
+
+#programming-experience-app-developer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#programming-experience-app-developer {
+  font-weight: bold;
+}
+
+#programming-experience-app-developer-date {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#programming-experience-apps {
+  margin-top: 5px;
+}
+
+#programming-experience-youtube-wrapper {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#programming-experience-youtube {
+  font-weight: bold;
+}
+
+#programming-experience-youtube-date {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#work-history-wrapper {
+  margin-top: 10px;
+}
+
+#work-history-security-analyst-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#work-history-security-analyst {
+  font-weight: bold;
+}
+
+#work-history-security-analyst-date {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#work-history-security-analyst-points {
+  margin-top: 5px;
+}
+
+#work-history-sales-associate-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#work-history-sales-associate {
+  font-weight: bold;
+}
+
+#work-history-sales-associate-date {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#work-history-sales-associate-points {
+  margin-top: 5px;
+}
+/*# sourceMappingURL=styles.css.map */
