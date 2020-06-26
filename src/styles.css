@@ -8,7 +8,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  border: solid black 2px;
 }
 
 #sidebar {
