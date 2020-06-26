@@ -1,7 +1,7 @@
 export default {
   contactLocation: "Melbourne, VIC",
-  contactPhone: "0421 448 539",
-  contactEmail: "charliemcg@protonmail.ch",
+  contactPhone: "",
+  contactEmail: "",
   linksAndroid: "https://bit.ly/2NulWCw",
   linksIos: "https://apple.co/2VJ7fgB",
   linksGithub: "https://bit.ly/2GP62Rk",
@@ -53,7 +53,7 @@ export default {
   workHistoryTitle: "Work History",
   workHistorySecurityAnalyst: "Security Analyst",
   workHistorySecurityAnalystDate: "2019 – present",
-  workHistorySecurityAnalystCompany: "Infosys",
+  workHistorySecurityAnalystCompany: "",
   workHistorySecurityAnalystPoints: [
     "Correcting sync issues between applications within a federated system.",
     "Migrating data between servers of different operating systems.",
@@ -62,7 +62,7 @@ export default {
   ],
   workHistorySalesAssociate: "Sales Associate",
   workHistorySalesAssociateDate: "2012 - 2018",
-  workHistorySalesAssociateCompany: "Guitar Exchange",
+  workHistorySalesAssociateCompany: "",
   workHistorySalesAssociatePoints: [
     "Used sales skills to optimise customer satisfaction while maintaining the highest profit margin on the sales team.",
     "Worked closely with customers and suppliers to determine stock which would be valuable to both customers and the shop.",
