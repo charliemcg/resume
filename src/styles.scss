@@ -7,7 +7,7 @@ $react-blue: #61dbfb;
   width: 794px;
   display: flex;
   flex-direction: row;
-  // border: solid black 2px;
+  border: solid black 2px;
 }
 #sidebar {
   background: $react-blue;
@@ -81,6 +81,8 @@ $react-blue: #61dbfb;
   width: 67%;
   background: $almost-white;
   background-image: url("./assets/ReactLogo.png");
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 #main-content {
   padding: 20px;
@@ -112,6 +114,7 @@ $react-blue: #61dbfb;
 }
 .date {
   text-align: end;
+  flex: 1;
 }
 #programming-experience-app-developer-wrapper {
   display: flex;
@@ -140,29 +143,20 @@ $react-blue: #61dbfb;
 #work-history-wrapper {
   margin-top: 10px;
 }
-#work-history-security-analyst-wrapper {
+#work-history-item {
+  margin-bottom: 20px;
+}
+#work-history-item-wrapper {
   display: flex;
   flex-direction: row;
 }
-#work-history-security-analyst {
+#work-history-item-job {
   font-weight: bold;
 }
-#work-history-security-analyst-date {
-  flex: 1;
+#work-history-item-points {
+  margin-top: 10px;
 }
-#work-history-security-analyst-points {
-  margin-top: 5px;
-}
-#work-history-sales-associate-wrapper {
+#work-history-item-point-wrapper {
   display: flex;
   flex-direction: row;
-}
-#work-history-sales-associate {
-  font-weight: bold;
-}
-#work-history-sales-associate-date {
-  flex: 1;
-}
-#work-history-sales-associate-points {
-  margin-top: 5px;
 }

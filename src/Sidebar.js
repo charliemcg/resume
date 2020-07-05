@@ -9,88 +9,67 @@ import appStoreIcon from "./assets/AppStoreIcon.png";
 import githubIcon from "./assets/GithubIcon.png";
 import youtubeIcon from "./assets/YoutubeIcon.png";
 
+const contactItems = [
+  { icon: locationIcon, label: strings.contactLocation },
+  { icon: phoneIcon, label: strings.contactPhone },
+  { icon: emailIcon, label: strings.contactEmail },
+];
+
+const linkItems = [
+  {
+    icon: playStoreIcon,
+    link: strings.linksAndroid,
+  },
+  { icon: appStoreIcon, link: strings.linksIos },
+  {
+    icon: githubIcon,
+    link: strings.linksGithub,
+  },
+  {
+    icon: youtubeIcon,
+    link: strings.linksYoutube,
+  },
+];
+
 function SideBar() {
   return (
     <div id="sidebar">
       {/* contact */}
       <div id="contact-wrapper">
-        <div className="contact-attribute-wrapper">
-          <div className="icon-wrapper">
-            <img src={locationIcon} alt="" style={{ height: "20px" }} />
-          </div>
-          <div className="link">{strings.contactLocation}</div>
-        </div>
-        <div className="contact-attribute-wrapper">
-          <div className="icon-wrapper">
-            <img src={phoneIcon} alt="" style={{ height: "20px" }} />
-          </div>
-          <div className="link">{strings.contactPhone}</div>
-        </div>
-        <div className="contact-attribute-wrapper">
-          <div className="icon-wrapper">
-            <img src={emailIcon} alt="" style={{ height: "20px" }} />
-          </div>
-          <div className="link">{strings.contactEmail}</div>
-        </div>
+        {contactItems.map((item, i) => {
+          return (
+            <div key={i} className="contact-attribute-wrapper">
+              <div className="icon-wrapper">
+                <img src={item.icon} alt="" style={{ height: "20px" }} />
+              </div>
+              <div className="link">{item.label}</div>
+            </div>
+          );
+        })}
       </div>
       {/* links */}
       <div id="links-wrapper">
-        <div className="link-attribute-wrapper">
-          <div className="icon-wrapper">
-            <img src={playStoreIcon} alt="" className="img" />
-          </div>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href={strings.linksAndroid}
-            className="link"
-          >
-            {strings.linksAndroid}
-          </a>
-        </div>
-        <div className="link-attribute-wrapper">
-          <div className="icon-wrapper">
-            <img src={appStoreIcon} alt="" className="img" />
-          </div>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href={strings.linksIos}
-            className="link"
-          >
-            {strings.linksIos}
-          </a>
-        </div>
-        <div className="link-attribute-wrapper">
-          <div className="icon-wrapper">
-            <img src={githubIcon} alt="" className="img" />
-          </div>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href={strings.linksGithub}
-            className="link"
-          >
-            {strings.linksGithub}
-          </a>
-        </div>
-        <div className="link-attribute-wrapper">
-          <div className="icon-wrapper">
-            <img src={youtubeIcon} alt="" className="img" />
-          </div>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href={strings.linksYoutube}
-            className="link"
-          >
-            {strings.linksYoutube}
-          </a>
-        </div>
+        {linkItems.map((item, i) => {
+          return (
+            <div key={i} className="link-attribute-wrapper">
+              <div className="icon-wrapper">
+                <img src={item.icon} alt="" className="img" />
+              </div>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href={item.link}
+                className="link"
+              >
+                {item.link}
+              </a>
+            </div>
+          );
+        })}
       </div>
       {/* education */}
       <div id="education-wrapper">
-        <div id="education-title" class="title">
+        <div id="education-title" className="title">
           {strings.educationTitle}
         </div>
         <div id="education-degree">{strings.educationDegree}</div>
@@ -103,8 +82,10 @@ function SideBar() {
           <div>{strings.skillsTitle}</div>
         </div>
         <ul id="skills">
-          {strings.skills.map((skill) => (
-            <li id="skill-point">{skill}</li>
+          {strings.skills.map((skill, i) => (
+            <li key={i} id="skill-point">
+              {skill}
+            </li>
           ))}
         </ul>
       </div>

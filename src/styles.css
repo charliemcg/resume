@@ -8,6 +8,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  border: solid black 2px;
 }
 
 #sidebar {
@@ -131,6 +132,8 @@
   width: 67%;
   background: #fdfdfd;
   background-image: url("./assets/ReactLogo.png");
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 #main-content {
@@ -175,6 +178,9 @@
 
 .date {
   text-align: end;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 #programming-experience-app-developer-wrapper {
@@ -226,7 +232,11 @@
   margin-top: 10px;
 }
 
-#work-history-security-analyst-wrapper {
+#work-history-item {
+  margin-bottom: 20px;
+}
+
+#work-history-item-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -236,21 +246,15 @@
           flex-direction: row;
 }
 
-#work-history-security-analyst {
+#work-history-item-job {
   font-weight: bold;
 }
 
-#work-history-security-analyst-date {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+#work-history-item-points {
+  margin-top: 10px;
 }
 
-#work-history-security-analyst-points {
-  margin-top: 5px;
-}
-
-#work-history-sales-associate-wrapper {
+#work-history-item-point-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -258,19 +262,5 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-}
-
-#work-history-sales-associate {
-  font-weight: bold;
-}
-
-#work-history-sales-associate-date {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
-#work-history-sales-associate-points {
-  margin-top: 5px;
 }
 /*# sourceMappingURL=styles.css.map */

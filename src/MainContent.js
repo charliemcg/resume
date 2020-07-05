@@ -2,6 +2,28 @@ import React from "react";
 import "./styles.css";
 import strings from "./strings";
 
+const { workHistoryItems } = strings;
+
+const getWorkHistoryItems = ({ item, i }) => {
+  return (
+    <div key={i} id="work-history-item">
+      <div id="work-history-item-wrapper">
+        <div id="work-history-item-job">{item.job}</div>
+        <div className="date">{item.date}</div>
+      </div>
+      <div> {item.company}</div>
+      <div id="work-history-item-points">
+        {item.points.map((point, i) => (
+          <div key={i} id="work-history-item-point-wrapper">
+            <div style={{ flex: 1 }}>&#8226; </div>
+            <div style={{ flex: 16 }}>{point}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
 function MainContent() {
   return (
     <div id="main-content-background">
@@ -13,14 +35,14 @@ function MainContent() {
         </div>
         {/* summary */}
         <div id="summary-wrapper">
-          <div id="summary-title" class="title">
+          <div id="summary-title" className="title">
             {strings.summaryTitle}
           </div>
           <div id="summary-content">{strings.summaryContent}</div>
         </div>
         {/* programming experience */}
         <div id="programming-experience-wrapper">
-          <div id="programming-experience-title" class="title">
+          <div id="programming-experience-title" className="title">
             {strings.programmingExperienceTitle}
           </div>
           <div id="programming-experience-app-developer-wrapper">
@@ -35,8 +57,8 @@ function MainContent() {
             </div>
           </div>
           <ul id="programming-experience-apps">
-            {strings.programmingExperienceApps.map((point) => (
-              <li>{point}</li>
+            {strings.programmingExperienceApps.map((point, i) => (
+              <li key={i}>{point}</li>
             ))}
           </ul>
           <div id="programming-experience-youtube-wrapper">
@@ -53,10 +75,11 @@ function MainContent() {
         </div>
         {/* work history */}
         <div id="work-history-wrapper">
-          <div id="work-history-title" class="title">
+          <div id="work-history-title" className="title">
             {strings.workHistoryTitle}
           </div>
-          <div id="work-history-security-analyst-wrapper">
+          {workHistoryItems.map((item, i) => getWorkHistoryItems({ item, i }))}
+          {/* <div id="work-history-security-analyst-wrapper">
             <div id="work-history-security-analyst">
               {strings.workHistorySecurityAnalyst}
             </div>
@@ -87,7 +110,7 @@ function MainContent() {
             {strings.workHistorySalesAssociatePoints.map((point) => (
               <li>{point}</li>
             ))}
-          </ul>
+          </ul> */}
         </div>
       </div>
     </div>

@@ -5,9 +5,11 @@ import MainContent from "./MainContent";
 
 function App() {
   return (
-    <div id="master-wrapper">
-      <SideBar />
-      <MainContent />
+    <div style={{ width: "100%" }}>
+      <div id="master-wrapper">
+        <SideBar />
+        <MainContent />
+      </div>
     </div>
   );
 }

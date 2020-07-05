@@ -51,22 +51,28 @@ export default {
   programmingExperienceYoutubeDate: "2018 - present",
   programmingExperienceYoutubeDescription: "Programming tutorials",
   workHistoryTitle: "Work History",
-  workHistorySecurityAnalyst: "Security Analyst",
-  workHistorySecurityAnalystDate: "2019 – present",
-  workHistorySecurityAnalystCompany: "",
-  workHistorySecurityAnalystPoints: [
-    "Correcting sync issues between applications within a federated system.",
-    "Migrating data between servers of different operating systems.",
-    "Automating processes with Jenkins.",
-    "Documenting technical processes.",
-  ],
-  workHistorySalesAssociate: "Sales Associate",
-  workHistorySalesAssociateDate: "2012 - 2018",
-  workHistorySalesAssociateCompany: "",
-  workHistorySalesAssociatePoints: [
-    "Used sales skills to optimise customer satisfaction while maintaining the highest profit margin on the sales team.",
-    "Worked closely with customers and suppliers to determine stock which would be valuable to both customers and the shop.",
-    "Performed back-end operations on the shop’s website via Magento.",
-    "Regularly posted product related content and conducted marketing campaigns via Facebook.",
+  workHistoryItems: [
+    {
+      job: "Security Analyst",
+      date: "2019 – present",
+      company: "Infosys",
+      points: [
+        "Correcting sync issues between applications within a federated system.",
+        "Migrating data between servers of different operating systems.",
+        "Automating processes with Jenkins.",
+        "Documenting technical processes.",
+      ],
+    },
+    {
+      job: "Sales Associate",
+      date: "2012 - 2018",
+      company: "Guitar Exchange",
+      points: [
+        "Used sales skills to optimise customer satisfaction while maintaining the highest profit margin on the sales team.",
+        "Worked closely with customers and suppliers to determine stock which would be valuable to both customers and the shop.",
+        "Performed back-end operations on the shop’s website via Magento.",
+        "Regularly posted product related content and conducted marketing campaigns via Facebook.",
+      ],
+    },
   ],
 };
